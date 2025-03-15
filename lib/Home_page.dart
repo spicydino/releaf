@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     Dashboard(),
     LeaderboardScreen(),
     DashboardScreen(),
+    WastePage(),
     Center(child: Text('Upcoming', style: TextStyle(fontSize: 24, color: Colors.white))),
     Center(child: Text('Profile', style: TextStyle(fontSize: 24, color: Colors.white))),
   ];
