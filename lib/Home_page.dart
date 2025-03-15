@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:releaf/Home_page.dart';
 import 'package:releaf/Waste Management/wastePage.dart';
 import 'package:releaf/dashboard/dashboard.dart';
+import 'package:releaf/screens/dashboard_screen.dart';
+import 'package:releaf/screens/eco_chat_screens.dart';
 import 'package:releaf/leaderboard/leaderboard.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _pages = [
     Dashboard(),
     LeaderboardScreen(),
+    DashboardScreen(),
     Center(child: Text('Upcoming', style: TextStyle(fontSize: 24, color: Colors.white))),
     Center(child: Text('Profile', style: TextStyle(fontSize: 24, color: Colors.white))),
   ];
@@ -89,8 +92,9 @@ class _HomePageState extends State<HomePage> {
             children: [
               _buildBottomNavItem(Icons.home, 'Home', 0),
               _buildBottomNavItem(Icons.leaderboard, 'Leaderboard', 1),
-              _buildBottomNavItem(Icons.upcoming, 'Upcoming', 2),
-              _buildBottomNavItem(Icons.person, 'Profile', 3),
+              _buildBottomNavItem(Icons.chat_bubble, 'ChatBox', 2),
+              _buildBottomNavItem(Icons.upcoming, 'Upcoming', 3),
+              _buildBottomNavItem(Icons.person, 'Profile', 4),
             ],
           ),
         ),
