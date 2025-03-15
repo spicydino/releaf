@@ -25,12 +25,6 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text('Waste Management'),
             ),
-            ElevatedButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/login');
-              },
-              child: Text('Energy Management'),
-            ),
             ],
         ),
     ),

@@ -1,4 +1,14 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:mobile_scanner/mobile_scanner.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:releaf/Waste%20Management/qrscanner.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: WastePage(),
+  ));
+}
 
 class WastePage extends StatelessWidget {
   @override
@@ -14,10 +24,9 @@ class WastePage extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                // Navigate to QR scanning mechanism
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => QRScanPage()),
+                  MaterialPageRoute(builder: (context) => QRScannerPage()),
                 );
               },
               child: Text('Scan QR Code'),
@@ -25,7 +34,6 @@ class WastePage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Navigate to community building page
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => CommunityPage()),
@@ -40,19 +48,7 @@ class WastePage extends StatelessWidget {
   }
 }
 
-class QRScanPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('QR Scan'),
-      ),
-      body: Center(
-        child: Text('QR Scanning Mechanism Here'),
-      ),
-    );
-  }
-}
+
 
 class CommunityPage extends StatelessWidget {
   @override
@@ -66,10 +62,4 @@ class CommunityPage extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: WastePage(),
-  ));
 }
