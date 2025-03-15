@@ -83,7 +83,15 @@ flutter:
   assets:
     - assets/Images/logo.jpg
     - assets/Images/forest.jpg
-     
+    - assets/Images/nss.jpg
+    - assets/Images/community.jpg
+    - assets/Images/background.jpg
+    - assets/Images/background1.jpg
+    - assets/Images/background2.jpg
+    - assets/Images/pfp1.webp
+    - assets/Images/pfp2.webp
+    - assets/Images/pfp3.webp
+    - assets/Images/waste.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

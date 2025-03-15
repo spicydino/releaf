@@ -19,8 +19,12 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _pages = [
     Dashboard(),
     LeaderboardScreen(),
+<<<<<<< HEAD
     DashboardScreen(),
     Center(child: Text('Upcoming', style: TextStyle(fontSize: 24, color: Colors.white))),
+=======
+    WastePage(),
+>>>>>>> c87fed9f7d14f2b672feadd18abeb41427e4f6a0
     Center(child: Text('Profile', style: TextStyle(fontSize: 24, color: Colors.white))),
   ];
 
