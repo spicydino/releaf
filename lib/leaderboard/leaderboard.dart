@@ -47,7 +47,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
             children: [
               Text(
                 'Leaderboard',
-                style: TextStyle(color: const Color(0xFFFFFFFF), fontSize: 28, fontWeight: FontWeight.bold),
+                style: TextStyle(color: const Color(0xFFFFFFFF), fontSize: 25, fontWeight: FontWeight.bold),
               ),
             ],
           ),
@@ -56,8 +56,8 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _buildPodium(userNames[0], userPoints[0], 3, userImages[0]),
-              _buildPodium(userNames[1], userPoints[1], 2, userImages[1]),
               _buildPodium(userNames[2], userPoints[2], 1, userImages[2]),
+              _buildPodium(userNames[1], userPoints[1], 2, userImages[1]),
             ],
           ),
           SizedBox(height: 20),

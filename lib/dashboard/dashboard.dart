@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:releaf/WasteManagementdastboard/WasteManagementDashboard.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -69,6 +70,69 @@ class _DashboardState extends State<Dashboard> {
                   ],
                 ),
               ),
+
+              SizedBox(height: 20),
+
+              Container(
+                margin: const EdgeInsets.only(bottom: 20),
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade900,
+                  borderRadius: BorderRadius.circular(20),
+                  image: const DecorationImage(
+                    image: AssetImage('assets/Images/forest.jpg'), // Replace with your image
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  crossAxisAlignment: CrossAxisAlignment.center,
+  children: [
+    Text(
+      "Manage Aapla Waste",
+      style: GoogleFonts.roboto(
+        fontSize: 24,
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    const SizedBox(height: 5),
+    Text(
+      "Aapla kachra aapli zawabdari",
+      style: GoogleFonts.roboto(
+        fontSize: 16,
+        color: Colors.grey.shade400,
+      ),
+    ),
+    
+    const SizedBox(height: 20),
+    Align(
+      alignment: Alignment.center,
+      child: ElevatedButton.icon(
+        onPressed: () {
+          Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Wastemanagementdashboard()),
+      );
+        },
+        icon: const Icon(Icons.arrow_forward, size: 18),
+        label: const Text("Start"),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.green.shade800,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+        ),
+      ),
+    ),
+  ],
+),
+
+              ),
+
+
+              SizedBox(height: 20),
 
               // CO2 Footprint Card
               Container(
