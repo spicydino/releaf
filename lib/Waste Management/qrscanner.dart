@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+
 import 'WasteGuidelinesPage.dart'; // Import the guidelines page
+// Import the mobile scanner package
 
 class QRScannerPage extends StatefulWidget {
   @override

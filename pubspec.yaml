@@ -31,7 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   mobile_scanner: ^3.2.0
-  image_picker: ^1.0.7
+  
   permission_handler: ^11.0.0
 
 
@@ -45,6 +45,8 @@ dependencies:
   path_provider: ^2.1.5
   intl_utils: ^2.8.10
   geolocator: ^13.0.2
+  
+
 
 dev_dependencies:
   flutter_test:
