@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:releaf/Waste%20Management/Community/CommunityPage.dart';
 
 class WastePage extends StatelessWidget {
   @override
@@ -54,19 +55,6 @@ class QRScanPage extends StatelessWidget {
   }
 }
 
-class CommunityPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Community'),
-      ),
-      body: Center(
-        child: Text('Community Building Page Here'),
-      ),
-    );
-  }
-}
 
 void main() {
   runApp(MaterialApp(
