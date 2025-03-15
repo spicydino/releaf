@@ -80,7 +80,7 @@ class _DashboardState extends State<Dashboard> {
                   color: Colors.grey.shade900,
                   borderRadius: BorderRadius.circular(20),
                   image: const DecorationImage(
-                    image: AssetImage('assets/Images/forest.jpg'), // Replace with your image
+                    image: AssetImage('assets/Images/waste.jpg'), // Replace with your image
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -88,24 +88,23 @@ class _DashboardState extends State<Dashboard> {
   mainAxisAlignment: MainAxisAlignment.center,
   crossAxisAlignment: CrossAxisAlignment.center,
   children: [
-    Text(
-      "Manage Aapla Waste",
-      style: GoogleFonts.roboto(
-        fontSize: 24,
-        color: Colors.white,
-        fontWeight: FontWeight.bold,
-      ),
+    Container(
+  decoration: BoxDecoration(
+    color: Colors.black.withOpacity(0.6), // Semi-transparent dark background
+    borderRadius: BorderRadius.circular(8), // Rounded corners
+  ),
+  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16), // Add some padding
+  child: Text(
+    "Manage Aapla Waste",
+    style: GoogleFonts.roboto(
+      fontSize: 24,
+      color: Colors.white,
+      fontWeight: FontWeight.bold,
     ),
+  ),
+),
+
     const SizedBox(height: 5),
-    Text(
-      "Aapla kachra aapli zawabdari",
-      style: GoogleFonts.roboto(
-        fontSize: 16,
-        color: Colors.grey.shade400,
-      ),
-    ),
-    
-    const SizedBox(height: 20),
     Align(
       alignment: Alignment.center,
       child: ElevatedButton.icon(
@@ -126,6 +125,17 @@ class _DashboardState extends State<Dashboard> {
         ),
       ),
     ),
+    
+    Text(
+      "Aapla kachra aapli zawabdari",
+      style: GoogleFonts.roboto(
+        fontSize: 16,
+        color: const Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
+    
+    const SizedBox(height: 20),
+    
   ],
 ),
 
