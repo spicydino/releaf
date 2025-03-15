@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "328921576590",
+    "project_id": "releaf-f7894",
+    "storage_bucket": "releaf-f7894.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328921576590:android:4337b177a1124d690dc5df",
+        "android_client_info": {
+          "package_name": "com.example.releaf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdvGq7Rm0PU0mSFZopCnpV3NEZfeSRGaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
