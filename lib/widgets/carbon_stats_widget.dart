@@ -36,15 +36,17 @@ class _CarbonStatsWidgetState extends State<CarbonStatsWidget> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.grey.shade900,
-        borderRadius: BorderRadius.circular(16),
-      ),
+Widget build(BuildContext context) {
+  return Container(
+    padding: const EdgeInsets.all(16),
+    decoration: BoxDecoration(
+      color: Colors.grey.shade900,
+      borderRadius: BorderRadius.circular(16),
+    ),
+    child: SingleChildScrollView(  // Wrap the entire column
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,  // Minimize the height
         children: [
           const Text(
             'Your CO₂ Footprint',
@@ -130,8 +132,10 @@ class _CarbonStatsWidgetState extends State<CarbonStatsWidget> {
           ),
         ],
       ),
-    );
-  }
+    ),
+  );
+}
+
 
   Widget _buildTrendComparison() {
     String trendText = _carbonData['trend_comparison'] ?? "No data";

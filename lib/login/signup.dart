@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:releaf/Home_page.dart';
 
 class SignupPage extends StatefulWidget {
   @override
@@ -13,6 +14,10 @@ class _SignupPageState extends State<SignupPage> {
   String selectedPfp = 'assets/Images/pfp1.jpg';
 
   void addUserDetails() async {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HomePage()),
+    );
     Map<String, dynamic> userMap = {
       'name': nameController.text,
       'email': emailController.text,
@@ -106,6 +111,7 @@ class _SignupPageState extends State<SignupPage> {
                               setState(() {
                                 selectedPfp = pfpPath;
                               });
+
                             },
                             child: Container(
                               margin: EdgeInsets.all(8),
@@ -134,7 +140,7 @@ class _SignupPageState extends State<SignupPage> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),
-                        ),
+                        ),    
                       ),
                     ],
                   ),
