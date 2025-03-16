@@ -58,7 +58,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 height: MediaQuery.of(context).size.height * 0.5, // Define height for the chat section
                 padding: EdgeInsets.all(16),
                 child: ChatWidget(),
+                
               ),
+              SizedBox(height: 25),
             ],
           ),
         ),

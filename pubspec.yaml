@@ -53,6 +53,7 @@ dependencies:
   fl_chart: ^0.70.2
   flutter_emoji: ^2.5.1
   cached_network_image: ^3.4.1
+  fluttertoast: ^8.2.10
   
   
 
