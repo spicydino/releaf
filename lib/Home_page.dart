@@ -5,6 +5,8 @@ import 'package:releaf/dashboard/dashboard.dart';
 import 'package:releaf/screens/dashboard_screen.dart';
 import 'package:releaf/screens/eco_chat_screens.dart';
 import 'package:releaf/leaderboard/leaderboard.dart';
+import 'package:releaf/widgets/MarketPlace.dart';
+import 'package:releaf/widgets/MarketPlace.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -20,8 +22,9 @@ class _HomePageState extends State<HomePage> {
     Dashboard(),
     LeaderboardScreen(),
     DashboardScreen(),
-    WastePage(),
-    Center(child: Text('Upcoming', style: TextStyle(fontSize: 24, color: Colors.white))),
+    ReLeafShopApp(),
+
+    Center(child: Text('Market Place', style: TextStyle(fontSize: 24, color: Colors.white))),
     Center(child: Text('Profile', style: TextStyle(fontSize: 24, color: Colors.white))),
   ];
 
@@ -94,7 +97,7 @@ class _HomePageState extends State<HomePage> {
               _buildBottomNavItem(Icons.home, 'Home', 0),
               _buildBottomNavItem(Icons.leaderboard, 'Leaderboard', 1),
               _buildBottomNavItem(Icons.chat_bubble, 'ChatBox', 2),
-              _buildBottomNavItem(Icons.upcoming, 'Upcoming', 3),
+              _buildBottomNavItem(Icons.shopping_cart, 'Market Place', 3),
               _buildBottomNavItem(Icons.person, 'Profile', 4),
             ],
           ),
