@@ -45,9 +45,15 @@ To run the app locally, follow these steps:
 
    ## 📱 Getting Started
 
-To run the app locally, follow these steps:
 
-1. **Install dependencies:**
-   ```bash
-   flutter pub get
+
+We welcome contributions from the community! Please read our `CONTRIBUTING.md` for guidelines on how to get started.
+
+---
+
+## 📧 Contact
+
+For any questions or suggestions, feel free to reach out at:
+- **Email:** yourname@example.com
+- **LinkedIn:** [Your Profile](#)
 
