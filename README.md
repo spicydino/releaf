@@ -54,6 +54,6 @@ We welcome contributions from the community! Please read our `CONTRIBUTING.md` f
 ## 📧 Contact
 
 For any questions or suggestions, feel free to reach out at:
-- **Email:** yourname@example.com
-- **LinkedIn:** [Your Profile](#)
+- **Email:** 02adityakoparkar@gmail.com
+- **LinkedIn:** [[Your Profile](https://www.linkedin.com/in/aditya-koparkar-68a5232a7/)](#)
 
