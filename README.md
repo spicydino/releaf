@@ -55,5 +55,5 @@ We welcome contributions from the community! Please read our `CONTRIBUTING.md` f
 
 For any questions or suggestions, feel free to reach out at:
 - **Email:** 02adityakoparkar@gmail.com
-- **LinkedIn:** [[Your Profile](https://www.linkedin.com/in/aditya-koparkar-68a5232a7/)](#)
+- **LinkedIn:** [[Aditya Koparkar](https://www.linkedin.com/in/aditya-koparkar-68a5232a7/)](#)
 
