@@ -22,7 +22,7 @@ The homepage serves as the primary interface for users, featuring a sleek, Duoli
 ## 🛠️ Tech Stack
 - **Framework:** Flutter
 - **Language:** Dart
-- **Backend:** Firebase/MongoDB (planned)
+- **Backend:** Firebase
 - **UI/UX:** Inspired by Duolingo’s vibrant and engaging color scheme
 
 ---
