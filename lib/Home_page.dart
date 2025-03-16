@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:releaf/Home_page.dart';
 import 'package:releaf/Waste Management/wastePage.dart';
 import 'package:releaf/dashboard/dashboard.dart';
+import 'package:releaf/menu/menu.dart';
+import 'package:releaf/profile/profile.dart';
 import 'package:releaf/screens/dashboard_screen.dart';
 import 'package:releaf/screens/eco_chat_screens.dart';
 import 'package:releaf/leaderboard/leaderboard.dart';
@@ -22,6 +24,8 @@ class _HomePageState extends State<HomePage> {
     Dashboard(),
     LeaderboardScreen(),
     DashboardScreen(),
+    WastePage(),
+    UserProfile(),
     ReLeafShopApp(),
 
     Center(child: Text('Market Place', style: TextStyle(fontSize: 24, color: Colors.white))),
@@ -42,6 +46,7 @@ class _HomePageState extends State<HomePage> {
               child: SizedBox(
                 width: 40,
                 height: 40,
+    
                 child: Image.asset(
                   'assets/Images/logo.jpg',
                   fit: BoxFit.contain,
@@ -66,7 +71,13 @@ class _HomePageState extends State<HomePage> {
             color: const Color.fromARGB(255, 24, 175, 36),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(builder: (context) => MenuPage()),
+              // );
+            },
             icon: const Icon(Icons.menu),
             color: const Color.fromARGB(255, 24, 175, 36),
           ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:releaf/Waste%20Management/Community/CommunityPage.dart';
 import 'package:releaf/WasteManagementdastboard/WasteManagementDashboard.dart';
+import 'package:releaf/profile/profile.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -111,7 +113,7 @@ class _DashboardState extends State<Dashboard> {
         onPressed: () {
           Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Wastemanagementdashboard()),
+          MaterialPageRoute(builder: (context) => Wastemanagementdashboard()),
       );
         },
         icon: const Icon(Icons.arrow_forward, size: 18),
@@ -207,7 +209,12 @@ class _DashboardState extends State<Dashboard> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                            MaterialPageRoute(builder: (context) => UserProfile()),
+                        );
+                    },
                     icon: const Icon(Icons.task, color: Colors.white),
                     label: const Text("Task of the day"),
                     style: ElevatedButton.styleFrom(
@@ -220,7 +227,12 @@ class _DashboardState extends State<Dashboard> {
                     ),
                   ),
                   ElevatedButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                            context,
+                              MaterialPageRoute(builder: (context) => CommunityPage()),
+                          );
+                    },
                     icon: const Icon(Icons.explore, color: Colors.white),
                     label: const Text("Explore community"),
                     style: ElevatedButton.styleFrom(
